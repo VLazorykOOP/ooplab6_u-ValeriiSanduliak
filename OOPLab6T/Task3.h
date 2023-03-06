@@ -12,7 +12,7 @@ public:
     virtual ~Human(){}
     void setHN(string h) { this->name = h; }
     string getHN() { return name; }
-    void setHA(double a) { this->age = a; }
+    void setHA(int a) { this->age = a; }
     int getHA() { return age; }
     string toString() 
     {
@@ -27,7 +27,7 @@ public:
     ~Father(){}
     void setFN(string f) { this->name = f; }
     string getFN() { return name;}
-    void setFA(double a) { this->age = a; }
+    void setFA(int a) { this->age = a; }
     int getFA() { return age; }
     string toString()
     {
@@ -43,7 +43,7 @@ public:
     ~Mother() {}
     void setMN(string m) { this->name = m; }
     string getMN() { return name; }
-    void setMA(double a) { this->age = a; }
+    void setMA(int a) { this->age = a; }
     int getMA() { return age; }
     string toString()
     {
@@ -65,7 +65,7 @@ public:
     }
     void setSN(string s) { Human::name = s; }
     string getSN() { return Human::name;}
-    void setSA(double a){Human::age = a;}
+    void setSA(int a){Human::age = a;}
     int getSA(){ return Human::age;}
     friend istream& operator>>(istream& in, Son& s) {
         cout << "Input son name: ";
